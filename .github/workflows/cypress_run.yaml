@@ -4,11 +4,11 @@ on:
   workflow_call:
     inputs:
       build_command:
-        default: 'build'
+        default: 'npm run build'
         required: false
         type: string
       start_command:
-        default: 'serve'
+        default: 'npm run serve'
         required: false
         type: string
 
@@ -16,8 +16,8 @@ jobs:
   cypress_run:
     uses: cypress-io/github-action@v2
     with:
-      build: npm run ${{ inputs.build_command }}
-      start: npm run ${{ inputs.start_command }}
+      build: ${{ inputs.build_command }}
+      start: ${{ inputs.start_command }}
       browser: chrome
     env:
       CYPRESS_SUPPORT: "y"
