@@ -8,7 +8,7 @@
 
 ### NPM Script Run <a name="npm_script_run"></a>
 
-[![.github/workflows/npm_script_run.yaml](https://github.com/MatthewZito/.github/actions/workflows/npm_script_run.yaml/badge.svg)](https://github.com/MatthewZito/.github/actions/workflows/npm_script_run.yaml)
+[![.github/workflows/npm_script_run.yml](https://github.com/MatthewZito/.github/actions/workflows/npm_script_run.yml/badge.svg)](https://github.com/MatthewZito/.github/actions/workflows/npm_script_run.yml)
 
 | key          | type   | default | required |
 |--------------|--------|---------|----------|
@@ -19,7 +19,7 @@ Precurses the execution of any npm script with a `git checkout` and `npm install
 
 ### Yarn Script Run <a name="yarn_script_run"></a>
 
-[![.github/workflows/yarn_script_run.yaml](https://github.com/MatthewZito/.github/actions/workflows/yarn_script_run.yaml/badge.svg)](https://github.com/MatthewZito/.github/actions/workflows/yarn_script_run.yaml)
+[![.github/workflows/yarn_script_run.yml](https://github.com/MatthewZito/.github/actions/workflows/yarn_script_run.yml/badge.svg)](https://github.com/MatthewZito/.github/actions/workflows/yarn_script_run.yml)
 
 | key          | type   | default | required |
 |--------------|--------|---------|----------|
@@ -30,7 +30,7 @@ Precurses the execution of any npm script with a `git checkout` and `yarn instal
 
 ### Pnpm Script Run <a name="pnpm_script_run"></a>
 
-[![.github/workflows/pnpm_script_run.yaml](https://github.com/MatthewZito/.github/actions/workflows/pnpm_script_run.yaml/badge.svg)](https://github.com/MatthewZito/.github/actions/workflows/pnpm_script_run.yaml)
+[![.github/workflows/pnpm_script_run.yml](https://github.com/MatthewZito/.github/actions/workflows/pnpm_script_run.yml/badge.svg)](https://github.com/MatthewZito/.github/actions/workflows/pnpm_script_run.yml)
 
 | key          | type   | default | required |
 |--------------|--------|---------|----------|
