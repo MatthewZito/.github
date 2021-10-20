@@ -1,0 +1,23 @@
+name: Run E2E and Integration Tests via Cypress
+
+on:
+  workflow_call:
+    inputs:
+      build_command:
+        default: 'build'
+        required: false
+        type: string
+      start_command:
+        default: 'serve'
+        required: false
+        type: string
+
+jobs:
+  cypress_run:
+    uses: cypress-io/github-action@v2
+    with:
+      build: npm run ${{ inputs.build_command }}
+      start: npm run ${{ inputs.start_command }}
+      browser: chrome
+    env:
+      CYPRESS_SUPPORT: "y"

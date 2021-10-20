@@ -1,0 +1,24 @@
+name: Reusable NPM Script Run
+
+on:
+  workflow_call:
+    inputs:
+      script_name: 
+        required: true
+        type: string
+
+jobs:
+  npm_script_run:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Git Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with: 
+          node-version: 'latest'
+          cache: 'npm'
+        
+      - run: npm ci
+      - run: npm run ${{ inputs.script_name }}
