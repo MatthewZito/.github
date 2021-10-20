@@ -5,7 +5,6 @@
 - [NPM Script Run](#npm_script_run)
 - [Yarn Script Run](#yarn_script_run)
 - [Pnpm Script Run](#pnpm_script_run)
-- [Cypress Run](#cypress_run)
 
 ### NPM Script Run <a name="npm_script_run"></a>
 
@@ -38,14 +37,3 @@ Precurses the execution of any npm script with a `git checkout` and `yarn instal
 | script_name  | string |         | true     |
 
 Precurses the execution of any npm script with a `git checkout` and `pnpm install`. Caches node modules.
-
-### Cypress Run <a name="cypress_run"></a>
-
-[![.github/workflows/cypress_run.yaml](https://github.com/MatthewZito/.github/actions/workflows/cypress_run.yaml/badge.svg)](https://github.com/MatthewZito/.github/actions/workflows/cypress_run.yaml)
-
-| key          | type   | default | required |
-|--------------|--------|---------|----------|
-| build_command  | string |   'npm run build'      | false     |
-| start_command | string | 'npm run serve'    | false    |
-
-Runs Cypress in headless mode; uses npm by default.
