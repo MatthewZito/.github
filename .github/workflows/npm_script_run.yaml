@@ -6,6 +6,10 @@ on:
       script_name: 
         required: true
         type: string
+      node_version:
+        default: '16'
+        required: false
+        type: string
 
 jobs:
   npm_script_run:
@@ -17,7 +21,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with: 
-          node-version: 'latest'
+          node-version: ${{ inputs.node_version }}
           cache: 'npm'
         
       - run: npm ci
