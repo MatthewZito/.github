@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Setup Node
-      - uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v2.0.1
         with:
           version: 6.14.7
           run_install: true
