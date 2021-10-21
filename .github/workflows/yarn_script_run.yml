@@ -7,9 +7,9 @@ on:
         required: true
         type: string
       node_version:
-        default: 16
+        default: 'lts/*'
         required: false
-        type: number
+        type: string
 
 jobs:
   npm_script_run:

@@ -7,9 +7,9 @@ on:
         required: true
         type: string
       node_version:
-        default: 16
+        default: 'lts/*'
         required: false
-        type: number
+        type: string
 
 jobs:
   npm_script_run:
@@ -29,5 +29,5 @@ jobs:
           node-version: ${{ inputs.node_version }}
           cache: 'pnpm'
         
-      - run: pnpm install
+      - run: pnpm install --no-frozen-lockfile
       - run: pnpm ${{ inputs.script_name }}
